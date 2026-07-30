@@ -41,6 +41,11 @@ Then open the URL Streamlit prints (usually http://localhost:8501).
 3. Trains a Prophet model on closing prices.
 4. Forecasts up to 4 years ahead and renders the forecast plus its components (trend, weekly/yearly seasonality).
 
+## Notes
+
+- Increase `period` in `main.py` to trade off prediction length against performance.
+- The UI theme is defined by the inline `PAGE_BG_IMG` style at the top of `main.py`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
