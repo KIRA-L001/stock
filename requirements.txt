@@ -1,5 +1,1 @@
-streamlit
-yfinance
-prophet
-plotly
-pandas
+pandas\nyfinance
