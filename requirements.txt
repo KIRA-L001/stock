@@ -1,1 +1,1 @@
-pandas\nyfinance
+# Stock dependencies
