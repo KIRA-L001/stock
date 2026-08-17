@@ -26,3 +26,14 @@ def retry(attempts=3, backoff=0.1):
             return fn(*args, **kwargs)
         return wrapper
     return decorator
+
+
+def memoize(fn):
+    """Cache `fn`'s results, keyed by positional arguments."""
+    cache = {}
+
+    def wrapper(*args):
+        if args not in cache:
+            cache[args] = fn(*args)
+        return cache[args]
+    return wrapper
